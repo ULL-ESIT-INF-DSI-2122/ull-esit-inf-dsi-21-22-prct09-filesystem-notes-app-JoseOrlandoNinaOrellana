@@ -1,0 +1,6 @@
+{
+    "entryPoints": [
+        "./src/Reduce"
+    ],
+    "out": "./docs"
+}
