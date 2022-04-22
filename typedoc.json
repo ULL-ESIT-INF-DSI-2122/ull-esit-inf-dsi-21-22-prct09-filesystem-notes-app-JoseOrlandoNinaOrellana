@@ -1,6 +1,10 @@
 {
     "entryPoints": [
-        "./src/Reduce"
+        "./src/Reduce.ts",
+        "./src/AddReduce.ts",
+        "./src/SubReduce.ts",
+        "./src/ProdReduce.ts",
+        "./src/DivReduce.ts"
     ],
     "out": "./docs"
 }
