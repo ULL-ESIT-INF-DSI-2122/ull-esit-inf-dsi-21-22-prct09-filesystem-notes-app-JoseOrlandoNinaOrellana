@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Note 1",
+    "body": "do something",
+    "color": "green"
+  },
+  {
+    "title": "Note 2",
+    "body": "do something",
+    "color": "yellow"
+  }
+]
