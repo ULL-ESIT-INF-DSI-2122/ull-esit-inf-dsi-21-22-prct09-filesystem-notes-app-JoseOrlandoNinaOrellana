@@ -21,7 +21,7 @@ describe('NoteManager class tests', () => {
     });
 
     it('readNote function returns ', () => {
-        expect(manager.readNote('orlando', 'Note 1')).to.be.equal('\u001b[32mNote 1\u001b[39m\n\u001b[32mdo something\u001b[39m');
+        expect(manager.readNote('orlando', 'Note 1')).to.be.equal(chalk.green('Note 1') + '\n' + chalk.green('do something'));
     });
 
     it('readNote function returns Note not found', () => {
@@ -29,26 +29,26 @@ describe('NoteManager class tests', () => {
     });
 
     it('listNotes function', () => {
-        expect(manager.listNotes('orlando')).to.be.equal('\u001b[32mYour notes\u001b[39m\n\u001b[32mNote 1\u001b[39m\n\u001b[33mNote 2\u001b[39m\n');
+        expect(manager.listNotes('orlando')).to.be.equal(chalk.green('Your notes') + '\n' + chalk.green('Note 1') + '\n' + chalk.yellow('Note 2') + '\n');
     });
 
     it('write funtion returns New note added!', () => {
-        expect(manager.write('orlando', note)).to.be.equal('\u001b[32mNew note added!\u001b[39m');
+        expect(manager.write('orlando', note)).to.be.equal(chalk.green('New note added!'));
     });
 
     it('write funtion returns Note title taken!', () => {
-        expect(manager.write('orlando', new Note('Note 1', '', ''))).to.be.equal('\u001b[31mNote title taken!\u001b[39m');
+        expect(manager.write('orlando', new Note('Note 1', '', ''))).to.be.equal(chalk.red('Note title taken!'));
     });
 
     it('remove function returns Note removed!', () => {
-        expect(manager.removeNote('orlando', 'title')).to.be.equal('\u001b[32mNote removed!\u001b[39m');
+        expect(manager.removeNote('orlando', 'title')).to.be.equal(chalk.green('Note removed!'));
     });
 
     it('remove function returns No note found', () => {
-        expect(manager.removeNote('orlando', 'Note 99')).to.be.equal('\u001b[31mNo note found\u001b[39m');
+        expect(manager.removeNote('orlando', 'Note 99')).to.be.equal(chalk.red('No note found'));
     });
 
     it('putColor function test', () => {
-        expect(manager.putColor('red', 'test')).to.be.equal('\u001b[31mtest\u001b[39m');
+        expect(manager.putColor('red', 'test')).to.be.equal(chalk.red('test'));
     })
 });
