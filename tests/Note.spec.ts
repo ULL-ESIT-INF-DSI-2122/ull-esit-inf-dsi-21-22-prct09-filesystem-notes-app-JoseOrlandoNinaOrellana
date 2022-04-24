@@ -2,6 +2,7 @@ import 'mocha';
 import { expect } from 'chai';
 import { Note } from '../src/Note';
 import { NoteManager } from '../src/NoteManager';
+import * as chalk from 'chalk';
 
 describe('Note class tests', () => {
     let note = new Note('title', 'body', 'red');
@@ -24,7 +25,7 @@ describe('NoteManager class tests', () => {
     });
 
     it('readNote function returns Note not found', () => {
-        expect(manager.readNote('orlando', 'Note 99')).to.be.equal('\u001b[31mNote not found\u001b[39m');
+        expect(manager.readNote('orlando', 'Note 99')).to.be.equal(chalk.red('Note not found'));
     });
 
     it('listNotes function', () => {
