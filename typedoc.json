@@ -4,7 +4,9 @@
         "./src/AddReduce.ts",
         "./src/SubReduce.ts",
         "./src/ProdReduce.ts",
-        "./src/DivReduce.ts"
+        "./src/DivReduce.ts",
+        "./src/Note.ts",
+        "./src/NoteManager.ts"
     ],
     "out": "./docs"
 }
