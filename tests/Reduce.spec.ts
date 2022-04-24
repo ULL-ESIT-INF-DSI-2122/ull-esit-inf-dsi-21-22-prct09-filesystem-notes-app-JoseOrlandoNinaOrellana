@@ -1,9 +1,9 @@
 import 'mocha';
 import { expect } from 'chai';
-import { AddReduce } from '../src/AddReduce';
-import { ProdReduce } from '../src/ProdReduce';
-import { SubReduce } from '../src/SubReduce';
-import { DivReduce } from '../src/DivReduce';
+import { AddReduce } from '../src/Modificacion/AddReduce';
+import { ProdReduce } from '../src/Modificacion/ProdReduce';
+import { SubReduce } from '../src/Modificacion/SubReduce';
+import { DivReduce } from '../src/Modificacion/DivReduce';
 
 describe('AddReduce test', () => {
 
