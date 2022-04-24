@@ -1,3 +1,11 @@
+# Informe Práctica 9
+
+## Badges
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ULL-ESIT-INF-DSI-2122_ull-esit-inf-dsi-21-22-prct09-filesystem-notes-app-JoseOrlandoNinaOrellana&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ULL-ESIT-INF-DSI-2122_ull-esit-inf-dsi-21-22-prct09-filesystem-notes-app-JoseOrlandoNinaOrellana)
+
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct09-filesystem-notes-app-JoseOrlandoNinaOrellana/badge.svg?branch=master)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct09-filesystem-notes-app-JoseOrlandoNinaOrellana?branch=master)
+
 ## Clase Note
 
 La clase `Note` tiene como atributos un `title`, un `body` y un `color`. Este último se usará para mostrar la nota en dicho color. Todos los atributos son públicos.
