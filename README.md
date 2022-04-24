@@ -27,3 +27,7 @@ La función `listNotes` recibe como parámetro  el nombre del usuario. La funci�
 La función `readNote` recibe como parámetro el nombre del usuario y el título de la nota. La función devuelve un string el contenido de la nota. Primero comprobamos si la nota existe, en el caso de que no exista devolvemos un mensaje de error. En el caso de que exista leemos el contenido del json con `read` y con el `forEach` recorremos el array buscando del título de la nota, cuando la encontremos guardaremos el contenido en la variable `output`y lo devolveremos.
 
 La función `removeNote` recibe como parámetro el nombre del usuario y el título de la nota. La función se encarga de borrar un nota. Primero comprueba si la nota existe, si no existe devuelve un mensaje de error. Si existe leemos el json con `read` y con `findIndex` buscamos el índice de la nota en el array. Cuando hayamos encontrado el índice usaremos `splice` para eliminar la nota. Por último actulizaremos el contenido del fichero.
+
+## Comandos de yargs
+
+Crearemos los comandos con la función `command` de la librería yargs. En `command` ponemos como se llamará el comando, en `describe` una descripción de lo que hace el comando, en `builder` indicaremos las opciones. En el builder pondremos los flags del comando, en cada flag pondremos una descripción, si es obligatorio y el tipo.
